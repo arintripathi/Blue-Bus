@@ -1,4 +1,4 @@
-package com.nrifintech.lms.service.impl;
+package com.nrifintech.bms.service.impl;
 
 import java.io.Serializable;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nrifintech.lms.entity.AbstractBaseEntity;
-import com.nrifintech.lms.repository.AbstractBaseRepository;
-import com.nrifintech.lms.service.AbstractBaseService;
+import com.nrifintech.bms.entity.AbstractBaseEntity;
+import com.nrifintech.bms.repository.AbstractBaseRepository;
+import com.nrifintech.bms.service.AbstractBaseService;
 
 /**
  * @author	Debopam

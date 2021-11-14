@@ -1,11 +1,11 @@
-package com.nrifintech.lms.controller;
+package com.nrifintech.bms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.nrifintech.lms.service.UserService;
+import com.nrifintech.bms.service.UserService;
 
 /**
  * @author	Debopam
@@ -25,6 +25,6 @@ public class UserController {
 	
 	@RequestMapping("/welcome")
 	public String welcomeUser() {
-		return "welcome";
+		return "dashboard";
 	}
 }

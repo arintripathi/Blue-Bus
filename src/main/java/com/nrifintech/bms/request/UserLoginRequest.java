@@ -1,4 +1,4 @@
-package com.nrifintech.lms.request;
+package com.nrifintech.bms.request;
 
 import javax.validation.constraints.Pattern;
 

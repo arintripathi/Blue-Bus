@@ -1,4 +1,4 @@
-package com.nrifintech.lms.aspects;
+package com.nrifintech.bms.aspects;
 
 import java.util.UUID;
 

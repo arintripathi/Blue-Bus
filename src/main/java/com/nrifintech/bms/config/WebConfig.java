@@ -1,11 +1,11 @@
-package com.nrifintech.lms.config;
+package com.nrifintech.bms.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.nrifintech.lms.interceptpr.AuthenticationInterceptor;
+import com.nrifintech.bms.interceptpr.AuthenticationInterceptor;
 
 /**
  * @author	Debopam

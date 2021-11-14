@@ -1,4 +1,4 @@
-package com.nrifintech.lms;
+package com.nrifintech.bms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @created	Nov 9, 2021
  */
 @SpringBootApplication
-public class LmsApplication {
+public class BmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LmsApplication.class, args);
+		SpringApplication.run(BmsApplication.class, args);
 	}
 
 }

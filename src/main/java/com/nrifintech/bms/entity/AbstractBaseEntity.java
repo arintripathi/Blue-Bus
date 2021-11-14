@@ -1,4 +1,4 @@
-package com.nrifintech.lms.entity;
+package com.nrifintech.bms.entity;
 
 import java.io.Serializable;
 import java.util.Date;

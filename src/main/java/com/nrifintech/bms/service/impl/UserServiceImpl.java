@@ -1,4 +1,4 @@
-package com.nrifintech.lms.service.impl;
+package com.nrifintech.bms.service.impl;
 
 import java.util.Objects;
 
@@ -7,10 +7,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nrifintech.lms.entity.User;
-import com.nrifintech.lms.repository.UserRepository;
-import com.nrifintech.lms.request.UserLoginRequest;
-import com.nrifintech.lms.service.UserService;
+import com.nrifintech.bms.entity.Admin;
+import com.nrifintech.bms.repository.UserRepository;
+import com.nrifintech.bms.request.UserLoginRequest;
+import com.nrifintech.bms.service.UserService;
 
 /**
  * @author	Debopam
@@ -19,7 +19,7 @@ import com.nrifintech.lms.service.UserService;
  */
 @Service
 @Transactional
-public class UserServiceImpl extends AbstractBaseServiceImpl<User, Long> implements UserService {
+public class UserServiceImpl extends AbstractBaseServiceImpl<Admin, Long> implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
@@ -36,7 +36,7 @@ public class UserServiceImpl extends AbstractBaseServiceImpl<User, Long> impleme
 			return false;
 		}
 		
-		User fetchedUser = userRepository.findByUsernameAndPassword(userLoginRequest.getUsername(), userLoginRequest.getPassword());
+		Admin fetchedUser = userRepository.findByUsernameAndPassword(userLoginRequest.getUsername(), userLoginRequest.getPassword());
 		
 		if(!Objects.isNull(fetchedUser)) return true;
 		else return false;

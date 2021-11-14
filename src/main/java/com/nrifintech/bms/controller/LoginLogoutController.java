@@ -1,4 +1,4 @@
-package com.nrifintech.lms.controller;
+package com.nrifintech.bms.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -9,9 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.nrifintech.lms.request.UserLoginRequest;
-import com.nrifintech.lms.service.UserService;
+import com.nrifintech.bms.request.UserLoginRequest;
+import com.nrifintech.bms.service.UserService;
 
 /**
  * @author	Debopam
@@ -27,7 +28,7 @@ public class LoginLogoutController {
 		this.userService = userService;
 	}
 	
-	@GetMapping("/login")
+	@RequestMapping("/login")
 	public String login() {
 		return "login";
 	}
@@ -38,10 +39,11 @@ public class LoginLogoutController {
 		if (isValidUser) {
 			HttpSession session = request.getSession(true);
 			session.setAttribute("isValidUser", true);
+			model.addAttribute("error", "");
 			session.setAttribute("username", loginRequest.getUsername());
 			return "forward:/user/welcome";
 		} else {
-			model.addAttribute("error", "Invalid Credentials!!!");
+			model.addAttribute("error", "Invalid Credentials");
 			return "forward:/login";
 		}
 	}

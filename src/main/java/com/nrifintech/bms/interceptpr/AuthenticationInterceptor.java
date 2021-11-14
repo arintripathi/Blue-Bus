@@ -1,4 +1,4 @@
-package com.nrifintech.lms.interceptpr;
+package com.nrifintech.bms.interceptpr;
 
 import java.util.Objects;
 import java.util.regex.Pattern;

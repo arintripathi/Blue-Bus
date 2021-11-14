@@ -1,4 +1,4 @@
-package com.nrifintech.lms.exception;
+package com.nrifintech.bms.exception;
 
 import java.util.List;
 import java.util.stream.Collectors;

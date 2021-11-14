@@ -1,4 +1,4 @@
-package com.nrifintech.lms.entity;
+package com.nrifintech.bms.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="USER")
-public class User extends AbstractBaseEntity {
+public class Admin extends AbstractBaseEntity {
 	private static final long serialVersionUID = 6715094082833854125L;
 
 	@Column(name="USERNAME")

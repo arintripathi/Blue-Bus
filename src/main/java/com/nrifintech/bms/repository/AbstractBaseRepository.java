@@ -1,11 +1,11 @@
-package com.nrifintech.lms.repository;
+package com.nrifintech.bms.repository;
 
 import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
-import com.nrifintech.lms.entity.AbstractBaseEntity;
+import com.nrifintech.bms.entity.AbstractBaseEntity;
 
 /**
  * @author	Debopam

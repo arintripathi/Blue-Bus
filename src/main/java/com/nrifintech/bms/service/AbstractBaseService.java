@@ -1,10 +1,10 @@
-package com.nrifintech.lms.service;
+package com.nrifintech.bms.service;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
-import com.nrifintech.lms.entity.AbstractBaseEntity;
+import com.nrifintech.bms.entity.AbstractBaseEntity;
 
 /**
  * @author	Debopam
